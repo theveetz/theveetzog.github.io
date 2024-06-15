@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trap & RnB Artists</title>
+    <title>Music Streaming Platform</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Trap & RnB Artists</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-        </nav>
+        <div class="container">
+            <h1>Music Streaming Platform</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Browse</a>
+                <a href="#">Favorites</a>
+                <a href="#">Profile</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="artists">
-            <h2>Featured Artists</h2>
-            <div class="artist">
-                <img src="img/bryson_tiller.jpg" alt="Bryson Tiller">
-                <h3>Bryson Tiller</h3>
-                <p>Popular Songs: Don't, Exchange, Right My Wrongs</p>
+
+    <main class="container">
+        <section class="grid">
+            <div class="card">
+                <img src="img/album1.jpg" alt="Album Cover">
+                <h2>Album Title</h2>
+                <p>Artist Name</p>
+                <button>Play</button>
             </div>
-            <div class="artist">
-                <img src="img/artist2.jpg" alt="Artist 2">
-                <h3>Artist 2</h3>
-                <p>Popular Songs: Song A, Song B, Song C</p>
-            </div>
+            <!-- Repeat card divs for each album or track -->
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Trap & RnB Artists. All rights reserved.</p>
+        <div class="container">
+            &copy; 2024 Music Streaming Platform
+        </div>
     </footer>
 </body>
 </html>
-
