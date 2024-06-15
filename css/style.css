@@ -6,37 +6,40 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818;
+    color: #FFFFFF;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 header {
-    background-color: #1DB954;
-    width: 100%;
-    padding: 1rem 0;
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
-    color: white;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 nav {
-    margin-top: 1rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 nav a {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 15px;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
@@ -46,39 +49,59 @@ nav a:hover {
 }
 
 main {
-    width: 100%;
-    max-width: 1200px;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
-section {
-    margin-bottom: 2rem;
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
-    background-color: #FFFFFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #121212;
+    color: #FFFFFF;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem;
+    padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    width: 100%;
     border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #1DB954;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1ED760;
 }
 
 footer {
-    background-color: #1DB954;
-    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
-    color: white;
-    padding: 1rem 0;
+    padding: 20px 0;
+    clear: both;
 }
+
